@@ -282,7 +282,7 @@ class QueueHandlerDiscreteTest(TestCase):
         trs = []
         while not self.queue.empty():
             trs.append(f.get_trace())
-        assert len(trs) == 2 ** 3
+        assert len(trs) == 2**3
 
         true_latents = {(i1, i2, i3) for i1 in range(2) for i2 in range(2) for i3 in range(2)}
 
